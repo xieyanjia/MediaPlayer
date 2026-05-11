@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMediaPlayer));
             this.palButton = new System.Windows.Forms.Panel();
-            this.wmpVideo = new AxWMPLib.AxWindowsMediaPlayer();
-            this.btnBrowser = new System.Windows.Forms.Button();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnPause = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnBrowser = new System.Windows.Forms.Button();
+            this.wmpVideo = new AxWMPLib.AxWindowsMediaPlayer();
             this.palButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).BeginInit();
             this.SuspendLayout();
@@ -51,38 +51,17 @@
             this.palButton.Size = new System.Drawing.Size(568, 75);
             this.palButton.TabIndex = 1;
             // 
-            // wmpVideo
+            // btnStop
             // 
-            this.wmpVideo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wmpVideo.Enabled = true;
-            this.wmpVideo.Location = new System.Drawing.Point(0, 0);
-            this.wmpVideo.Name = "wmpVideo";
-            this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
-            this.wmpVideo.Size = new System.Drawing.Size(568, 318);
-            this.wmpVideo.TabIndex = 0;
-            // 
-            // btnBrowser
-            // 
-            this.btnBrowser.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnBrowser.Location = new System.Drawing.Point(27, 18);
-            this.btnBrowser.Name = "btnBrowser";
-            this.btnBrowser.Size = new System.Drawing.Size(75, 42);
-            this.btnBrowser.TabIndex = 2;
-            this.btnBrowser.Text = "瀏覽";
-            this.btnBrowser.UseVisualStyleBackColor = true;
-            this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Enabled = false;
-            this.btnPlay.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPlay.Location = new System.Drawing.Point(121, 18);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(75, 42);
-            this.btnPlay.TabIndex = 3;
-            this.btnPlay.Text = "播放";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            this.btnStop.Enabled = false;
+            this.btnStop.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStop.Location = new System.Drawing.Point(311, 18);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 42);
+            this.btnStop.TabIndex = 5;
+            this.btnStop.Text = "停止";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnPause
             // 
@@ -96,17 +75,38 @@
             this.btnPause.UseVisualStyleBackColor = true;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
-            // btnStop
+            // btnPlay
             // 
-            this.btnStop.Enabled = false;
-            this.btnStop.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStop.Location = new System.Drawing.Point(311, 18);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(75, 42);
-            this.btnStop.TabIndex = 5;
-            this.btnStop.Text = "停止";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.btnPlay.Enabled = false;
+            this.btnPlay.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPlay.Location = new System.Drawing.Point(121, 18);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(75, 42);
+            this.btnPlay.TabIndex = 3;
+            this.btnPlay.Text = "播放";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // btnBrowser
+            // 
+            this.btnBrowser.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBrowser.Location = new System.Drawing.Point(27, 18);
+            this.btnBrowser.Name = "btnBrowser";
+            this.btnBrowser.Size = new System.Drawing.Size(75, 42);
+            this.btnBrowser.TabIndex = 2;
+            this.btnBrowser.Text = "瀏覽";
+            this.btnBrowser.UseVisualStyleBackColor = true;
+            this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
+            // 
+            // wmpVideo
+            // 
+            this.wmpVideo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wmpVideo.Enabled = true;
+            this.wmpVideo.Location = new System.Drawing.Point(0, 0);
+            this.wmpVideo.Name = "wmpVideo";
+            this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
+            this.wmpVideo.Size = new System.Drawing.Size(568, 318);
+            this.wmpVideo.TabIndex = 0;
             // 
             // frmMediaPlayer
             // 
