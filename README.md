@@ -1,5 +1,7 @@
 # MediaPlayer
 
+---
+
 ## 專案簡介
 
 本程式主要提供基本影片播放功能的多媒體應用程式練習專案。程式使用 `OpenFileDialog` 讓使用者選取影片檔案，並透過 Windows Media Player 控制元件進行播放控制。
@@ -40,6 +42,8 @@
 
 ### 4. 影片靜音
 
-按下「靜音」按鈕後，影片會靜音撥放。
+按下「靜音」按鈕後，影片會靜音播放。
 
 ---
+
+<img width="535" height="376" alt="image" src="https://github.com/user-attachments/assets/51800588-691a-497a-b69f-6c98f70afcd7" />
