@@ -47,5 +47,11 @@ namespace MediaPlayer
         {
             wmpVideo.Ctlcontrols.stop(); // 停止
         }
+
+        private void chkMute_CheckedChanged(object sender, EventArgs e)
+        {
+            // 根據 CheckBox 的打勾狀態決定是否靜音
+            wmpVideo.settings.mute = chkMute.Checked; 
+        }
     }
 }

@@ -35,20 +35,22 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnBrowser = new System.Windows.Forms.Button();
             this.wmpVideo = new AxWMPLib.AxWindowsMediaPlayer();
+            this.chkMute = new System.Windows.Forms.CheckBox();
             this.palButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).BeginInit();
             this.SuspendLayout();
             // 
             // palButton
             // 
+            this.palButton.Controls.Add(this.chkMute);
             this.palButton.Controls.Add(this.btnStop);
             this.palButton.Controls.Add(this.btnPause);
             this.palButton.Controls.Add(this.btnPlay);
             this.palButton.Controls.Add(this.btnBrowser);
             this.palButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.palButton.Location = new System.Drawing.Point(0, 243);
+            this.palButton.Location = new System.Drawing.Point(0, 248);
             this.palButton.Name = "palButton";
-            this.palButton.Size = new System.Drawing.Size(568, 75);
+            this.palButton.Size = new System.Drawing.Size(568, 84);
             this.palButton.TabIndex = 1;
             // 
             // btnStop
@@ -105,20 +107,33 @@
             this.wmpVideo.Location = new System.Drawing.Point(0, 0);
             this.wmpVideo.Name = "wmpVideo";
             this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
-            this.wmpVideo.Size = new System.Drawing.Size(568, 318);
+            this.wmpVideo.Size = new System.Drawing.Size(568, 332);
             this.wmpVideo.TabIndex = 0;
+            // 
+            // chkMute
+            // 
+            this.chkMute.AutoSize = true;
+            this.chkMute.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.chkMute.Location = new System.Drawing.Point(417, 28);
+            this.chkMute.Name = "chkMute";
+            this.chkMute.Size = new System.Drawing.Size(60, 24);
+            this.chkMute.TabIndex = 6;
+            this.chkMute.Text = "靜音";
+            this.chkMute.UseVisualStyleBackColor = true;
+            this.chkMute.CheckedChanged += new System.EventHandler(this.chkMute_CheckedChanged);
             // 
             // frmMediaPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 318);
+            this.ClientSize = new System.Drawing.Size(568, 332);
             this.Controls.Add(this.palButton);
             this.Controls.Add(this.wmpVideo);
             this.Name = "frmMediaPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "多媒體播放器";
             this.palButton.ResumeLayout(false);
+            this.palButton.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmpVideo)).EndInit();
             this.ResumeLayout(false);
 
@@ -132,6 +147,7 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnBrowser;
         private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.CheckBox chkMute;
     }
 }
 
