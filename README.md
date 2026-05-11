@@ -1,7 +1,5 @@
 # MediaPlayer
 
----
-
 ## 專案簡介
 
 本程式主要提供基本影片播放功能的多媒體應用程式練習專案。程式使用 `OpenFileDialog` 讓使用者選取影片檔案，並透過 Windows Media Player 控制元件進行播放控制。
